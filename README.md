@@ -1,16 +1,31 @@
-# React + Vite
+# Alpha - Frontend Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React.js demo implementing:
+- Car image carousel (Swiper)
+- Interactive 360° view (model-viewer in modal)
+- Price calculator (number of invites + duration)
+- Car overview section (model, year, mileage, price)
 
-Currently, two official plugins are available:
+## Live demo
+https://alpha-cars-blond.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech stack
+- React.js (JavaScript)
+- Tailwind CSS
+- Swiper (carousel)
+- @google/model-viewer (360° / 3D viewer)
+- react-modal
 
-## React Compiler
+## How to run locally
+1. `git clone http://github.com/yasirakhlaque/Alpha-Cars`
+2. `npm install`
+3. `npm run dev`
+4. Open `http://localhost:5173`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Notes
+- Replace images in `/public/images`.
+- Replace 3D model in `/public/models/car.glb` if you want richer 360 interactions.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Submission
+- Deployed link: (https://alpha-cars-blond.vercel.app/)
+- GitHub repo: (http://github.com/yasirakhlaque/Alpha-Cars)

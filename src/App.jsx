@@ -24,7 +24,7 @@ export default function App() {
             <div className="grid grid-cols-2 gap-4">
               <button
                 onClick={open360Viewer}
-                className="col-span-2 group flex items-center justify-center space-x-3 bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white p-4 rounded-2xl transition-all duration-300 font-bold shadow-lg hover:shadow-xl hover:scale-[1.02]"
+                className="text-xs md:text-base col-span-2 group flex items-center justify-center space-x-3 bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white p-4 rounded-2xl transition-all duration-300 font-bold shadow-lg hover:shadow-xl hover:scale-[1.02]"
               >
                 <FaEye className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 <span>View 360° Interactive Model</span>
@@ -34,7 +34,7 @@ export default function App() {
             {/* Info Tip - Glassmorphism */}
             <div className="bg-white/5 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex items-start space-x-3 shadow-xl">
               <FaInfoCircle className="w-5 h-5 text-gray-300 shrink-0 mt-0.5" />
-              <p className="text-sm text-gray-300">
+              <p className="text-xs md:text-sm text-gray-300">
                 Tip: Click the 360° button above to explore the car in a 3D space.
                 You can rotate, zoom, and inspect details.
               </p>
@@ -50,7 +50,7 @@ export default function App() {
             />
 
             {/* Confirm Button - Glassmorphism with gradient */}
-            <button className="w-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white py-4 rounded-2xl text-lg font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-[1.02] active:scale-95">
+            <button className="w-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white py-4 rounded-2xl font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-[1.02] active:scale-95 text-sm md:text-base">
               Confirm Reservation
             </button>
           </div>
