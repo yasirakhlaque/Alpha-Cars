@@ -1,7 +1,3 @@
-/**
- * Navigation bar component - Dark Glassmorphism Theme
- * Displays the app logo and navigation buttons
- */
 function Navbar() {
   return (
     <nav className="bg-neutral-900/50 backdrop-blur-xl border-b border-white/10 sticky top-0 z-40 shadow-lg shadow-black/20">

@@ -1,7 +1,3 @@
-/**
- * Car Overview Card Component - Dark Glassmorphism Theme
- * Displays the car's basic information like model, year, mileage, and price
- */
 function CarOverview({ details }) {
   return (
     <div className="bg-white/5 backdrop-blur-md rounded-2xl shadow-xl border border-white/10 p-6 flex flex-col justify-center">

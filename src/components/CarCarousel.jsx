@@ -14,15 +14,12 @@ function CarCarousel() {
 
     updateWidth();
 
-    // Watch for size changes
     const resizeObserver = new ResizeObserver(updateWidth);
     resizeObserver.observe(element);
 
-    // Cleanup when component unmounts
     return () => resizeObserver.disconnect();
   }, []);
 
-  // Enable keyboard navigation (left/right arrows)
   useEffect(() => {
     function handleKeyPress(e) {
       if (e.key === "ArrowLeft") {
@@ -35,7 +32,6 @@ function CarCarousel() {
 
     window.addEventListener("keydown", handleKeyPress);
 
-    // Cleanup
     return () => window.removeEventListener("keydown", handleKeyPress);
   }, [activeIndex]); 
 
@@ -44,7 +40,6 @@ function CarCarousel() {
     const element = scrollRef.current;
     if (!element || width === 0) return;
 
-    // Calculate which image is currently in view
     const index = Math.round(element.scrollLeft / width);
     setActiveIndex(index);
   };
@@ -54,7 +49,6 @@ function CarCarousel() {
     const element = scrollRef.current;
     if (!element) return;
 
-    // Scroll to the image
     element.scrollTo({
       left: index * width,
       behavior: "smooth"
